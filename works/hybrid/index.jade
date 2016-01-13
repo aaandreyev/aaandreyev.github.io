@@ -1,0 +1,186 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        // Bootstrap Core CSS
+        link(rel='stylesheet', href='css/bootstrap.min.css')
+        // Custom CSS
+        link(href='css/hybrid.css', rel='stylesheet')
+        // Custom Fonts
+        link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+
+    body
+        // Header
+        header#top.header
+            .text-vertical
+                .container-fluid
+                    .row
+                        .col-md-5.col-md-offset-1
+                            h1
+                                | HYBRID
+                                i.fa.fa-power-off
+                                label.label.label-primary.label-small v 1.2
+                            h2
+                                i.fa.fa-rocket
+                                |  Smart Landing Page
+                            p
+                                | Hybrid is a multipurpose, responsive, one page html (bootstrap) theme. Seo Optimized, very lightweight code based on bootstrap. Easy to use and fast loading. Responsive layout, optimized for high conversion. Clean design focused on good readability. Hybrid Landing Page is the perfect theme for your next project!
+                            p
+                                a(href='https://github.com/elkindnet/forbetterweb-hybrid-landing/archive/gh-pages.zip')
+                                    button.btn.btn-lg.border-button-header(type='button')
+                                        i.fa.fa-cloud-download
+                                        |  DOWNLOAD FREE
+                                a(href='https://wrapbootstrap.com/theme/hybrid-multipurpose-landing-page-WB0N64HDJ?ref=codedesign')
+                                    button.btn.btn-lg.btn-danger.border-button-header2(type='button')
+                                        i.fa.fa-shopping-cart
+                                        |  PRO VERSION $9
+                        .col-md-4.col-md-offset-1
+                            // Contact Form - Enter your email address on line 17 of the mail/contact_me.php file to make this form work.
+                            // WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address!
+                            // NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally!
+                            form#contactForm(name='sentMessage', novalidate='')
+                                h2 Get your Hybrid
+                                p Don’t miss this Great Opportunity
+                                .row.control-group
+                                    .form-group.col-xs-12.floating-label-form-group.controls
+                                        label.sr-only.control-label(for='name') Name
+                                        input#name.form-control.input-lg(type='text', placeholder='Name', required='', data-validation-required-message='Please enter your name.')
+                                        span.help-block.text-danger
+                                .row.control-group
+                                    .form-group.col-lg-6.floating-label-form-group.controls.no-pad-right
+                                        label.sr-only.control-label(for='email') Email
+                                        input#email.form-control.input-lg(type='email', placeholder='Email', required='', data-validation-required-message='Please enter your email address.')
+                                        span.help-block.text-danger
+                                    .form-group.col-lg-6.floating-label-form-group.controls
+                                        label.sr-only.control-label(for='phone') You Phone
+                                        input#phone.form-control.input-lg(type='tel', placeholder='Phone', required='', data-validation-required-message='Please enter your phone number.')
+                                        span.help-block.text-danger
+                                #success
+                                .row
+                                    .form-group.col-xs-12
+                                        button.btn.btn-lg.btn-primary.btn-block(type='submit') Get your Hybrid
+                    // mouse
+                    span.scroll-btn.hidden-xs
+                        a(href='#about')
+                            span.mouse
+                                span
+                    // mouse
+        // about
+        section#about.about
+            .container
+                .row
+                    .col-xs-12.text-center
+                        i.fa.fa-5x.fa-h-square
+                        br
+                        h2.heading Hybrid Landing Page is the perfect theme for your next project!
+                        p.lead
+                            | Hybrid easily and efficiently scales your project with one code base, from phones to tablets to desktops.
+        // call-to-action
+        .call-to-action
+            .container-fluid
+                .col-md-5.col-md-offset-1
+                    h2.heading Designed for Everyone
+                    p
+                        | Seo Optimized, very lightweight code based on bootstrap. Easy to use and fast loading. Responsive layout, optimized for high conversion. Clean design focused on good readability.
+                .col-md-4.col-md-offset-1.text-center
+                    p
+                        i.fa.fa-5x.fa-h-square
+                    p
+                    p
+                        a(href='https://github.com/elkindnet/forbetterweb-hybrid-landing/archive/gh-pages.zip')
+                            button.btn.btn-lg.border-button-header(type='button')
+                                i.fa.fa-cloud-download
+                                |  DOWNLOAD FREE
+                        br
+                        a(href='https://wrapbootstrap.com/theme/hybrid-multipurpose-landing-page-WB0N64HDJ?ref=codedesign')
+                            button.btn.btn-lg.btn-danger.border-button-header2(type='button')
+                                i.fa.fa-shopping-cart
+                                |  PRO VERSION $9
+        // services
+        section#services.head
+            .container
+                .row
+                    .col-xs-12.text-center
+                        h2.heading Features
+                        p.lead Hybrid will look fabulous on all devices
+                        img.img-responsive.visible-lg-inline.visible-md-inline.visible-sm-inline.visible-xs-inline(src='img/res3.png')
+        // The icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/
+        section.services.text-center
+            .container-fluid
+                .col-lg-10.col-lg-offset-1
+                    .row
+                        .col-sm-4
+                            h3
+                                i.fa.fa-fighter-jet.fa-2x
+                                |  Lightweight
+                            p Easy to use and fast loading.
+                        .col-sm-4
+                            h3
+                                i.fa.fa-globe.fa-2x
+                                |  Seo Optimized
+                            p Seo Optimized, lightweight code based on bootstrap.
+                        .col-sm-4
+                            h3
+                                i.fa.fa-envelope-o.fa-2x
+                                |  Contact Form
+                            p Working, User-Friendly Contact Form
+                    .row
+                        .col-sm-4
+                            h3
+                                i.fa.fa-life-ring.fa-2x
+                                |  Lifetime updates
+                            p Lifetime free updates
+                        .col-sm-4
+                            h3
+                                i.fa.fa-eye.fa-2x
+                                |  Good readability
+                            p  Clean Design focused on good readability
+                        .col-sm-4
+                            h3
+                                i.fa.fa-line-chart.fa-2x
+                                |  High conversion
+                            p Optimized for high conversion.
+        // callout
+        section.callout
+            .container-fluid.text-vertical.text-center
+                .col-sm-10.col-sm-offset-1
+                    i.fa.fa-5x.fa-h-square
+                    br
+                    h2.heading It’s time to grow your business. Get it Now!
+                    p
+                        | Hybrid was created to be sold exclusive via Wrapbootstrap. When you click the "Buy" button you'll be redirected to their site.
+                    .row
+                        a.btn.border-button(href='https://wrapbootstrap.com/theme/hybrid-multipurpose-landing-page-WB0N64HDJ?ref=codedesign')
+                            | BUY HYBRID PRO
+                            i.fa.fa-power-off
+        // sponsors
+        #sponsor
+            .container-fluid
+                .row.sponsor.text-center
+                    .col-md-2.gray.col-md-offset-1
+                        a(href='/')
+                            img(src='img/logo1.png', alt='')
+                    .col-md-2.gray
+                        a(href='/')
+                            img(src='img/logo2.png', alt='')
+                    .col-md-2.gray
+                        a(href='/')
+                            img(src='img/logo3.png', alt='')
+                    .col-md-2.gray
+                        a(href='/')
+                            img(src='img/logo4.png', alt='')
+                    .col-md-2.gray
+                        a(href='/')
+                            img(src='img/logo5.png', alt='')
+        // jQuery
+        script(src='js/jquery.min.js')
+        // Bootstrap Core JavaScript
+        script(src='js/bootstrap.min.js')
+        // Custom Theme JavaScripts
+        script(src='js/hybrid.js')
+        // jQuery Plugins
+        script(src='js/jquery.placeholder.min.js')
+

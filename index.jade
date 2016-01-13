@@ -1,0 +1,481 @@
+html
+    head
+        meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+        link(href='css/main.css' rel='stylesheet' type='text/css')
+        link(href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' rel='stylesheet' type='text/css')
+body
+    .loading
+        .loading__cube
+            .cube1
+            .cube2
+    .header
+        .menu
+            p.hvr-shutter-out-vertical(href='#anthony') ANTHONY
+            p.hvr-shutter-out-vertical(href='#works') WORK
+            p.hvr-shutter-out-vertical(href='#contact') CONTACT
+    .overlay
+        .modal-window
+        .overlay__close
+            p +
+        .overlay__bg
+            .content
+    .view.viewOne#anthony
+        .viewOne__animate
+            .viewOne__head
+                p.viewOne__greet Hi, I'm
+                p.viewOne__name Anthony
+            .viewOne__specs
+                p CODER  /  DESIGNER  /  CREATOR
+    .view.viewTwo
+        .viewTwo__bg
+            .viewTwo__bg-img
+        .main
+            p I
+            p IMAGINE
+            p DESIGN
+            p CODE
+            p AWESOME
+            p THINGS
+    .view.viewThree
+        .skillsTitle
+            h4 MY TOOLBELT
+        .container-fluid
+            .row
+                .col-xs-offset-2.col-xs-8.col-sm-offset-1.col-sm-9.col-lg-offset-2.col-lg-8.skills
+                    .col-xs-6.col-sm-4.col-md-3
+                        .skill.skill--angular
+                            .skill__label
+                                small FRAMEWORK
+                            .skill__body
+                                .img.skill__body-image-1(data-toggle="tooltip" title="Angular.js" data-container="body")
+                    .col-xs-6.col-sm-4.col-md-3
+                        .skill.skill--layout
+                            .skill__label
+                                small LAYOUT
+                            .skill__body
+                                .img.skill__body-image-1(data-toggle="tooltip" title="CSS3" data-container="body")
+                                .img.skill__body-image-2(data-toggle="tooltip" title="Bootstrap" data-container="body")
+                    .col-xs-6.col-sm-4.col-md-3
+                        .skill.skill--sugar
+                            .skill__label
+                                small SUGAR
+                            .skill__body
+                                .img.skill__body-image-1(data-toggle="tooltip" title="SASS & SCSS" data-container="body")
+                    .col-xs-6.col-sm-4.col-md-3
+                        .skill.skill--automation
+                            .skill__label
+                                small AUTOMATION
+                            .skill__body
+                                .img.skill__body-image-1(data-toggle="tooltip" title="Grunt.js" data-container="body")
+                                .img.skill__body-image-2(data-toggle="tooltip" title="Gulp.js" data-container="body")
+                    .col-xs-6.col-sm-4.col-md-3
+                        .skill.skill--tools
+                            .skill__label
+                                small TOOLS
+                            .skill__body
+                                .img.skill__body-image-1(data-toggle="tooltip" title="Javascript" data-container="body")
+                                .img.skill__body-image-2(data-toggle="tooltip" title="JQuery" data-container="body")
+                    .col-xs-6.col-sm-4.col-md-3
+                        .skill.skill--server
+                            .skill__label
+                                small SERVER
+                            .skill__body
+                                .img.skill__body-image-1(data-toggle="tooltip" title="Node.js" data-container="body")
+                                .img.skill__body-image-2(data-toggle="tooltip" title="Express.js" data-container="body")
+                    .col-xs-6.col-sm-4.col-md-3
+                        .skill.skill--database
+                            .skill__label
+                                small DATABASE
+                            .skill__body
+                                .img.skill__body-image-1(data-toggle="tooltip" title="MongoDB" data-container="body")
+                                .img.skill__body-image-2(data-toggle="tooltip" title="Firebase" data-container="body")
+                    .col-xs-6.col-sm-4.col-md-3
+                        .skill.skill--design
+                            .skill__label
+                                small DESIGN
+                            .skill__body
+                                .img.skill__body-image-1(data-toggle="tooltip" title="Photoshop" data-container="body")
+                                .img.skill__body-image-2(data-toggle="tooltip" title="Illustrator" data-container="body")
+
+    .view.viewFour#works
+        .works__title
+            h4 LATEST WORKS
+        .works__stats
+            .container-fluid
+                .row
+                    .col-xs-offset-5.col-xs-1.col-md-offset-4
+                        .works__stat.works__stat-mobile
+                            h3 16
+                            p Mobile
+                    .col-xs-1
+                        .works__stat.works__stat-web
+                            h3 21
+                            p Web
+                    .col-xs-1
+                        .works__stat.works__stat-tv
+                            h3 2
+                            p Tv
+                    .col-xs-1
+                        .works__stat.works__stat-games
+                            h3 2
+                            p Games
+        .fluid-container
+            .works
+                .row
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/parisCard.png')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/parisCard.png')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/adidasIn.jpg')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/adidasIn.jpg')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/conversLight.png')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/conversLight.png')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/dockerIn.jpg')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/dockerIn.jpg')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/foodCard1.jpg')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/foodCard1.jpg')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/swatchCom.png')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/swatchCom.png')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/kenzoJp.jpg')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/kenzoJp.jpg')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/mobileArticle1.jpg')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-4.col-md-4
+                                    img(src='images/mobileArticle1.jpg')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/orbTheGame.jpg')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/orbTheGame.jpg')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/mobileMessages2.png')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/mobileMessages2.png')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/mobileMessages1.png')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/mobileMessages1.png')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/chat1.png')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/chat1.png')
+                                    img(src='images/chat2.png')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/mobileShop1.png')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-4.col-md-4
+                                    img(src='images/mobileShop1.png')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/mobileStatistics1.png')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/mobileStatistics1.png')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/newBalance.jpg')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/newBalance.jpg')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/NYTimes.png')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/NYTimes.png')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/tireDashboard1.jpg')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/tireDashboard1.jpg')
+                                    img(src='images/tireDashboard2.jpg')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/videoBg1.jpg')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/videoBg1.jpg')
+                                .col-xs-12.col-md-offset-4.col-md-4
+                                    img(src='images/videoBg2.jpg')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/goShow1.jpg')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/goShow1.jpg')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/mobileTicket.jpg')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/mobileTicket.jpg')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/listMe.jpg')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/listMe.jpg')
+                    .col-xs-6.col-md-3.work
+                        .works__item
+                            .works__item-tags
+                                .tag.ps-tag + LIVE VERSION
+                                .tag.psd-tag + PSD
+                            .item-description
+                                .item-description--overlay
+                                .item-description--text
+                                    p some text about the card
+                            .works__item-small
+                                img(src='images/maslow1.jpg')
+                            .works__item-big
+                                .col-xs-12.col-md-offset-2.col-md-8
+                                    img(src='images/maslow1.jpg')
+                                    img(src='images/maslow2.jpg')
+                                    img(src='images/maslow3.jpg')
+                                    img(src='images/maslow4.jpg')
+
+            .works__viewMore
+                small SHOW MORE
+    .view.viewFive#contact
+        .contact__title
+            h4 CONTACT ME
+        .contact__hire
+            p currently available for hire
+        .contact__details
+            .container-fluid
+                .row
+                    .col-xs-offset-0.col-sm-offset-2.col-md-offset-3
+                        .col-xs-4.col-sm-3
+                            .contact__detail.contact__detail--email
+                                p Email
+                                a(href='mailto:aandreyev.aanton@gmail.com' target='_blank')
+                                    h4 aandreyev.
+                                    h4 aanton
+                                    h4 gmail.com
+                        .col-xs-4.col-sm-3
+                            .contact__detail.contact__detail--skype
+                                p Skype
+                                a(href='skype:billioner111?userinfo')
+                                    h4 billioner111
+                        .col-xs-4.col-sm-3
+                            .contact__detail.contact__detail--upwork
+                                p Upwork
+                                a(href='https://www.upwork.com/freelancers/~011b6dc0e05974a837' target='_blank')
+                                    h4 Anton
+                                    h4 Andreyev
+                .row
+                    .col-xs-offset-2.col-xs-8.col-md-offset-4.col-md-4
+                        div.hire__but
+                            a.hire(href='https://www.upwork.com/freelancers/~011b6dc0e05974a837' target='_blank') HIRE
+        .see-you
+            h1 SEE YOU SOON
+    script(src='bower_components/jquery/dist/jquery.js')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js')
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
+    script(src='js/main.js')
+    //script(src='js/SmoothScroll.js')

@@ -1,0 +1,257 @@
+doctype html
+html(lang='en', xmlns='http://www.w3.org/1999/html')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        // Latest compiled and minified CSS
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
+        // Custom CSS
+        link(href='css/lovehub.css', rel='stylesheet')
+        // Custom Fonts
+        link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+        link(href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800', rel='stylesheet', type='text/css')
+    body#page-top(data-spy='scroll', data-target='.navbar-fixed-top')
+        // Navigation
+        nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
+            .container
+                .navbar-header
+                    button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
+                        i.fa.fa-bars.fa-2x
+                    a.navbar-brand.page-scroll(href='#page-top')
+                        | LOVE
+                        span.color HUB
+                        i.fa.fa-star
+                // Collect the nav links, forms, and other content for toggling
+                .collapse.navbar-collapse.navbar-right.navbar-main-collapse
+                    ul.nav.navbar-nav
+                        // Hidden li included to remove active class from about link when scrolled up past about section
+                        li.hidden
+                            a(href='#page-top')
+                        li
+                            a.page-scroll(href='#about') WHO WE ARE
+                        li
+                            a.page-scroll(href='#team') Team
+                        li
+                            a.page-scroll(href='#contact') Contact
+        // Intro Header
+        header.intro
+            .intro-body
+                .container
+                    .col-md-7
+                        h1.brand-heading
+                            | Love
+                            span.color Hub
+                            i.fa.fa-star-o
+                        p.intro-text LoveHub - ForBetterWeb.com Templates
+                    .col-md-5
+                        ul.list-inline.lead
+                            li
+                                a.btn.btn-primary.btn-lg.page-scroll(href='#about')
+                                    i.fa.fa-chevron-down
+                                    |  WHO WE ARE
+                            li
+                                a.btn.btn-default.btn-lg.page-scroll(href='#contact')
+                                    i.fa.fa-chevron-down
+                                    |  CONTACT US
+        // Countdown
+        section#countdown.container-fluid.text-center
+            h2.headerline UPCOMING EVENT
+            h4
+                | Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreet.
+            a.btn.btn-primary.btn-lg(href='https://wrapbootstrap.com/theme/lovehub-multipurpose-non-profit-theme-WB0T1J69J') Love Hub Pro Version!
+        // About Section
+        section#about.container-fluid
+            .row
+                .col-sm-6.split-padding3
+                    h2.headerline WHO WE ARE
+                    p
+                        | Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreet  amet consecte tur adipiscingtitor diam, a accumsan justo laoreet.
+                    p
+                        | Lorem ipsum dolor sit amet consecte tur
+                        a(href='/') adipiscingtitor
+                        |  diam, a accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreet  amet consecte.
+                    p
+                        | Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreet. Lorem ipsum dolor sit amet consecte tur ipsum dolor sit amet consecte tur adipiscingtitor diam, a accumsan justo laoreet  amet consecte tur adipiscingtitor diam, a accumsan justo laoreet.
+        // Progress Section
+        section#progress.container-fluid.text-center
+            .col-lg-6.col-lg-offset-3
+                h2.headerline Love Hub
+                h4 LoveHub IS THE PERFECT THEME FOR YOUR NEXT PROJECT!
+                a.btn.btn-default.btn-lg(href='https://wrapbootstrap.com/theme/lovehub-multipurpose-non-profit-theme-WB0T1J69J') Love Hub Pro Version!
+        // Team Section
+        section#team.container-fluid.text-center
+            .row
+                h2.headerline Our Team
+                br
+                .col-lg-3.col-md-6
+                    h4.headerline Rick Grimes
+                    p
+                        img.img-responsive.center-block(src='img/avatar1.jpg', alt='')
+                    p Lorem ipsum dolor sit amet consecte tur adipiscingtitor
+                    ul.list-inline.lead
+                        li
+                            a(href='/')
+                                span.fa-stack
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                        li
+                            a(href='/')
+                                span.fa-stack
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-behance.fa-stack-1x.fa-inverse
+                        li
+                            a(href='/')
+                                span.fa-stack
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-steam.fa-stack-1x.fa-inverse
+                        li
+                            a(href='mailto:')
+                                span.fa-stack
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-linkedin.fa-stack-1x.fa-inverse
+                .col-lg-3.col-md-6
+                    h4.headerline Glenn Rhee
+                    p
+                        img.img-responsive.center-block(src='img/avatar2.jpg', alt='')
+                    p Lorem ipsum dolor sit amet consecte tur adipiscingtitor
+                    ul.list-inline.lead
+                        li
+                            a(href='/')
+                                span.fa-stack
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                        li
+                            a(href='/')
+                                span.fa-stack
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-facebook.fa-stack-1x.fa-inverse
+                        li
+                            a(href='/')
+                                span.fa-stack
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-skype.fa-stack-1x.fa-inverse
+                        li
+                            a(href='mailto:')
+                                span.fa-stack
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-dribbble.fa-stack-1x.fa-inverse
+                .col-lg-3.col-md-6
+                    h4.headerline Daryl Dixon
+                    p
+                        img.img-responsive.center-block(src='img/avatar3.jpg', alt='')
+                    p Lorem ipsum dolor sit amet consecte tur adipiscingtitor
+                    ul.list-inline.lead
+                        li
+                            a(href='/')
+                                span.fa-stack
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                        li
+                            a(href='/')
+                                span.fa-stack
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-tumblr.fa-stack-1x.fa-inverse
+                        li
+                            a(href='/')
+                                span.fa-stack
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-pinterest.fa-stack-1x.fa-inverse
+                        li
+                            a(href='mailto:')
+                                span.fa-stack
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-envelope.fa-stack-1x.fa-inverse
+                .col-lg-3.col-md-6
+                    h4.headerline Andrea Harrison
+                    p
+                        img.img-responsive.center-block(src='img/avatar4.jpg', alt='')
+                    p Lorem ipsum dolor sit amet consecte tur adipiscingtitor
+                    ul.list-inline.lead
+                        li
+                            a(href='/')
+                                span.fa-stack
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                        li
+                            a(href='/')
+                                span.fa-stack
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-behance.fa-stack-1x.fa-inverse
+                        li
+                            a(href='/')
+                                span.fa-stack
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-instagram.fa-stack-1x.fa-inverse
+                        li
+                            a(href='mailto:')
+                                span.fa-stack
+                                    i.fa.fa-circle.fa-stack-2x
+                                    i.fa.fa-envelope.fa-stack-1x.fa-inverse
+        // Contact Section
+        section#contact.container-fluid.text-center
+            .overlay
+            .col-lg-6.col-lg-offset-3
+                h2.headerline Contact
+                p Lorem ipsum dolor sit amet consecte tur adipiscingtitor diam
+                h3
+                    i.fa.fa-phone
+                    |  (123) 456-7890
+                ul.list-inline.lead
+                    li
+                        a(href='/')
+                            span.fa-stack
+                                i.fa.fa-circle.fa-stack-2x
+                                i.fa.fa-twitter.fa-stack-1x.fa-inverse
+                    li
+                        a(href='/')
+                            span.fa-stack
+                                i.fa.fa-circle.fa-stack-2x
+                                i.fa.fa-facebook.fa-stack-1x.fa-inverse
+                    li
+                        a(href='/')
+                            span.fa-stack
+                                i.fa.fa-circle.fa-stack-2x
+                                i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+                    li
+                        a(href='')
+                            span.fa-stack
+                                i.fa.fa-circle.fa-stack-2x
+                                i.fa.fa-envelope.fa-stack-1x.fa-inverse
+                p
+                    i.fa.fa-map-marker
+                    |  2345 Some Ave, New York, NY 23458
+                p.text-muted Copyright © Your Website 2015
+        // jQuery
+        script(src='http://code.jquery.com/jquery-2.1.4.min.js')
+        // Latest compiled and minified JavaScript
+        script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
+        // Plugin JavaScript
+        script(src='js/jquery.easing.min.js')
+        script(src='js/jquery.countdown.min.js')
+        script(src='js/smoothscroll.js')
+        // Header Background Slider
+        script(src='js/jquery.backstretch.min.js')
+        script(type='text/javascript').
+            $(".intro").backstretch([
+                "img/1.jpg"
+                , "img/2.jpg"
+                , "img/3.jpg"
+                , "img/4.jpg"
+                , "img/5.jpg"
+                , "img/6.jpg"
+                , "img/7.jpg"
+            ], {duration: 4000, fade: 1000, centeredX:true, centeredY:true});
+        // Custom Theme JavaScript
+        script(src='js/lovehub.js')
+        //
+          Google Analitics
+          Demo Purpose Only
+          Change UA-XXXXXXX-X to be your site's ID
+        script.
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-1057679-2', 'auto');
+            ga('send', 'pageview');
