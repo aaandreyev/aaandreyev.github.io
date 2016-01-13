@@ -1,1 +1,4 @@
 .idea
+**/.jade
+**/.scss
+node_modules

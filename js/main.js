@@ -68,10 +68,15 @@ $(document).ready(function () {
                         top: -modal.height() * .1
                     }, 150, 'swing');
                 });
+                var pullDown = $(this).parent().height()- $(this).height() > 80 ? $(this).parent().height()- $(this).height() : 100;
+                $('.pull-down').each(function() {
+                    $(this).css('margin-top',pullDown);
+                });
+
                 overlay = true;
             }
         });
-        $('.overlay').on('click', function (evt) {
+        $('.overlay__close').on('click', function (evt) {
             console.log('click');
             evt.stopPropagation();
             if (overlay) {
@@ -116,4 +121,3 @@ $(document).ready(function () {
         })
     });
 });
-

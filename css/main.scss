@@ -77,6 +77,7 @@ $workSample: url('http://s24.postimg.org/62te5l41x/agora_profile.png');
 }
 
 ::-webkit-scrollbar-track {
+  background: white;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -98,6 +99,7 @@ html, body {
 :after {
   box-sizing: border-box;
   font-family: 'Josefin Sans', Arial, sans-serif;
+  text-decoration: none;
 }
 body{
   z-index: 1;
@@ -216,6 +218,7 @@ body{
   }
 
 }
+
 .overlay {
   position: fixed;
   top: 0;
@@ -228,16 +231,17 @@ body{
   overflow-x: hidden;
   opacity: 0;
 }
+
 .overlay__close {
-  position: absolute;
-  z-index: 100;
+  position: fixed;
   top: -35px;
-  right: 10px;
-
-
-  P {
+  right: 20px;
+  z-index: 100;
+  p {
     color: #000;
     opacity: .9;
+    position: relative;
+    z-index: 101;
     cursor: pointer;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -246,8 +250,13 @@ body{
     transform: rotate(45deg);
     font-size: 92px;
     font-weight: 200;
+    transform-origin: 50% 50%;
+    -webkit-transform-origin: 58% 58%;
+    transition:all .2s ease-in-out;
+
   }
 }
+
 .overlay__bg {
   z-index: 9;
   position: absolute;
@@ -618,24 +627,20 @@ body{
     position: relative;
     display: inline-block;
     font-size: 10px;
-    font-weight: 500;
-    color: rgba(255, 255, 255, .8);
+    font-weight: 700;
+    color: rgba(0,0,0, .8);
     margin: 7px 7px 0 0;
     float: right;
     opacity: 0.7;
     transition: all .35s ease-in-out;
+    background: rgba(255,255,255,.9);
+    box-shadow: 0 0 3px 1px rgba(0,0,0,.3);
+    padding: 3px 8px;
     &:hover {
       opacity: 1;
       color: white;
+      background: tomato;
     }
-  }
-  .ps-tag {
-    background: rgba(255, 0, 0, 0.6);
-    padding: 3px 5px;
-  }
-  .psd-tag {
-    background: rgba(0, 0, 255, 0.5);
-    padding: 3px 5px;
   }
   .works__title {
     width: 100%;
@@ -730,6 +735,47 @@ body{
   img {
     width: 100%;
   }
+  h2 {
+    margin: 45px 0 40px -7px;
+  }
+  h2 + p {
+    margin: -20 0 40px -5px;
+  }
+  a {
+    text-decoration: none;
+    display: block;
+    clear: both;
+    padding: 5px 12px;
+    color: #d58512;
+    border: 1px solid #d58512;
+    font-size: 11px;
+    float: right;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin-right: -14px;
+    &:hover {
+      color: white;
+      background: #d58512;
+    }
+  }
+  a:first-child{
+    margin-bottom: 11px;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+  a:last-child {
+    margin-bottom: 20px;
+    text-decoration: none;
+  }
+  a.psd {
+    color: #109cff;
+    border-color: #109cff;
+
+    &:hover {
+      color: white;
+      background: #109cff;
+    }
+  }
 }
 
 .works__item-small {
@@ -756,11 +802,11 @@ body{
   color: white;
   opacity: 0;
   transition: .35s ease-in-out;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   text-align: center;
 
   p {
-    margin: 25px;
+    margin: 55px;
     font-size: 16px;
   }
 
